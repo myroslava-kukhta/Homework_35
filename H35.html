@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./H35.css">
+</head>
+<body>
+  <header class="greeting">
+    <h1 class="shop-name">Firefly</h1>
+  </header>
+  <main id="main" class="main"></main>
+  <div class="form-container" style="display: none;">
+    <form class="form" name="main">
+      <h1 class="header">Order Form</h1>
+      <div class="modal-block" id="modal">
+        <div class="modal-window">
+          <div class="name-block">
+            <label for="name">Enter your name:</label>
+            <input type="text" name="name" id="name" class="full-name"> 
+          </div>
+          <select name="select" id="city" class="select-block">
+            <option disabled="disabled" selected="selected" value="user-city" class="select-city">Choose your city</option>
+          </select>
+          <div class="post-block">
+            <label for="post">Number of Nova Poshta:</label>
+            <input type="text" name="post" id="post" class="post-details"> 
+          </div>
+          <div class="payment-block">
+            <p>Choose your mode of payment</p>
+            <div>
+              <input type="radio" name="payment" id="cash" checked class="payment-mode" value="cash">
+              <label for="cash">Postpaid</label>
+              <input type="radio" name="payment" id="card" class="payment-mode" value="card">
+              <label for="card">Bank Card</label>
+            </div>
+          </div>
+          <div class="product-block">
+            <label for="itemNumber">Number of products you buy: </label>
+            <input type="number" name="itemNumber" id="itemNumber" class="product-number" min="1" max="20"> 
+          </div>
+          <textarea name="comment" id="comment" cols="30" rows="4" placeholder="Leave your Comment" class="comment-item"></textarea>
+          <div class="button-block">
+            <button type="button" id="submit-btn" class="button">Confirm order</button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="table-container" style="display: none;">
+    <table id="table" class="table"></table>
+  </div>
+  <script src="H35.js"></script>
+</body>
+</html>
+
